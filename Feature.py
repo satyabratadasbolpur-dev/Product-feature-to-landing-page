@@ -1,6 +1,6 @@
 import streamlit as st
 import google.generativeai as genai
-genai.configure(api_key=st.secrects["API_KEY"])
+genai.configure(api_key=st.secrets["API_KEY"])
 nontu_model = genai.GenerativeModel("gemini-2.5-flash")
 st.title(" Feature List to Landing Page Copy")
 product = st.text_input(" List of product features")
